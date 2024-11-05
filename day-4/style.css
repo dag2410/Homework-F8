@@ -87,3 +87,7 @@ h1 {
     font-weight: 500;
   }
 }
+.content-item:hover,.tittle div:hover{
+  background-color: #99aaae;
+  cursor: pointer;
+}
