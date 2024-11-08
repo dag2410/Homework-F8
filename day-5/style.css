@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(293deg, #e6e6e4 7.23%, #f0e8e2 97.74%);
+  padding: 40px 120px 100px;
+}
+
+header ul {
+  display: flex;
+  li {
+    margin: 0 5px;
+  }
+  a {
+    padding: 10px 20px;
+  }
+}
+.background header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    color: #1f1d2a;
+    font-size: 32px;
+    font-weight: 500;
+    width: 20%;
+  }
+
+  nav {
+    width: 50%;
+  }
+}
+
+header button {
+  width: 9%;
+  padding: 10px 20px;
+  border: 1px solid #1f1d2a;
+  color: #1f1d2a;
+  text-align: center;
+  background-color: transparent;
+}
+header li {
+  color: #1f1d2a;
+  margin-right: 52px;
+}
+
+.about-us {
+  width: 90%;
+  margin-top: 97px;
+  display: flex;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  h1 {
+    width: 90%;
+    color: #1f1d2a;
+    font-size: 55px;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-top: 61px;
+  }
+  p {
+    width: 60%;
+    color: #9b948e;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 30px;
+  }
+  button {
+    width: 28%;
+    color: #1f1d2a;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    background: #96c67f;
+    padding: 20px 5px;
+    font-family: Poppins;
+    border: none;
+    margin-top: 29px;
+  }
+}
+.ava {
+  display: flex;
+  margin-right: 0;
+  width: 40%;
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.trust-companies {
+  width: 60%;
+  margin: 150px auto;
+  span {
+    display: flex;
+    justify-content: center;
+    color: #1f1d2a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+}
+.companies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 15%;
+    height: 100%;
+  }
+}
+
+.cta-section {
+  width: 30%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: #1f1d2a;
+    text-align: center;
+    font-size: 18px;
+    color: var(--black, #1f1d2a);
+    font-weight: 500;
+  }
+  div {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    color: #1f1d2a;
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+/* teacher-list form */
+.teacher-list {
+  width: 100%;
+  display: flex;
+  margin: 70px auto;
+  gap: 31px;
+  justify-content: space-between;
+  div {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 323px;
+  }
+}
+.hover-event div {
+  width: 80%;
+  color: #1f1d2a;
+  font-size: 20px;
+  margin: 20px 207px 0 20px;
+  font-weight: 500;
+}
+.teacher-list p {
+  width: 100%;
+  color: #9b948e;
+  margin: 6px 70px 20px 20px;
+}
+
+button:hover {
+  background-color: #907171;
+}
