@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
+html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -21,7 +21,8 @@ ul li {
 
   a {
     font-family: "Roboto", sans-serif;
-
+    font-size: 16px;
+    font-weight: 400;
     padding: 30px 0;
     text-decoration: none;
     color: inherit;
@@ -115,8 +116,12 @@ footer hr {
     padding: 10px 40px 10px 10px;
     font-family: "Roboto", sans-serif;
     margin-right: 8px;
+    font-size: 16px;
+    font-weight: 400;
   }
   button {
+    font-size: 16px;
+    font-weight: 400;
     color: #fff;
     background: #3a3a3a;
     padding: 10px;
