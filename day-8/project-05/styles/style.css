@@ -271,6 +271,12 @@ header button {
   display: flex;
   margin-top: 55px;
   gap: 30px;
+
+}
+.design{
+  border-radius: 12px;
+  border: 1px solid #E2DFDA;
+  background: #FFF;
 }
 .info {
   display: flex;
