@@ -41,8 +41,6 @@ ul li {
 }
 /* -------------header-------------- */
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   .logo {
     width: 30%;
@@ -220,26 +218,23 @@ header button {
   font-weight: 600;
   line-height: 30px;
 }
-.edit {
-  display: flex;
-  align-content: space-between;
-
-  img {
-    width: 55px;
-    height: 55px;
-  }
+.edit img {
+  width: 55px;
+  height: 55px;
 }
+
 .infors {
   margin-left: 16px;
 }
 
-
-
-
-
-
-
 /*---------- Our popular courses----------*/
+.info,
+header,
+.edit {
+  display: flex;
+  justify-content: space-between;
+}
+
 .popular-course {
   margin-top: 265px;
 }
@@ -270,22 +265,22 @@ header button {
 .course-content {
   display: flex;
   margin-top: 55px;
-  gap: 30px;
-
 }
-.box-shadow-content{
+ul {
+  display: flex;
+  gap: 30px;
+}
+.box-shadow-content {
   border-radius: 12px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 .border-content {
   border-radius: 12px;
-  border: 1px solid #E2DFDA;
-  background: #FFF;
+  border: 1px solid #e2dfda;
+  background: #fff;
 }
 .info {
-  display: flex;
-  justify-content: space-between;
   h3 {
     color: #171100;
     font-family: Poppins;
@@ -343,7 +338,34 @@ header button {
 button:hover {
   background: #ffb900;
 }
+
 .title .back-next {
   display: flex;
   gap: 15px;
+  button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ffb900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    width: 6px;
+    height: 12px;
+    padding: 0;
+  }
+  i {
+    color: #ffb900;
+  }
+}
+.back-next button:hover {
+  background-color: #ffb900;
+  i {
+    color: #fff;
+  }
+}
+i {
+  font-size: 13px;
 }
