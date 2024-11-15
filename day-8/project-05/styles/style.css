@@ -23,6 +23,7 @@ button {
   background: #171100;
   cursor: pointer;
 }
+
 /* margin top 200 */
 .margin-top-200 {
   margin-top: 200px;
@@ -98,7 +99,7 @@ header button {
   font-weight: 600;
 }
 
-/* --------main--------- */
+/* --------------main-------------- */
 .content {
   display: flex;
   .title-course {
