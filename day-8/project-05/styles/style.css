@@ -35,7 +35,7 @@ ul li {
 .container {
   width: 1440px;
   height: 920px;
-  margin: 0 auto;
+  margin: 0 auto 1000px;
   background: #fffcf4;
   padding: 44px 135px 65px 135px;
 }
