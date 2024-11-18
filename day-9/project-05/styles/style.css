@@ -123,6 +123,7 @@ header button {
     margin: 167px 0 0 230px;
   }
 }
+
 .title-course h1 {
   color: #171100;
   font-family: Sen;
@@ -222,6 +223,9 @@ header button {
   bottom: 48px;
   right: -100px;
   gap: 22px;
+  .edit {
+    display: flex;
+  }
 }
 .infors > span {
   color: #5f5b53;
@@ -248,8 +252,7 @@ header button {
 
 /*---------- Our popular courses----------*/
 .info,
-header,
-.edit {
+header {
   display: flex;
   justify-content: space-between;
 }
