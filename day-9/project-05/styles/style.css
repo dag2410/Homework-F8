@@ -413,6 +413,9 @@ i {
     border-radius: 6px;
     background: #634700;
   }
+  .hightlight {
+    background-color: #ffb900;
+  }
 }
 .dot:hover {
   background-color: #ffb900;
@@ -478,7 +481,7 @@ i {
 }
 
 .features-info {
-  h1 {
+  h2 {
     margin-top: 58px;
     color: #171100;
     font-family: Sen;
@@ -512,7 +515,7 @@ i {
   display: flex;
 }
 .cta-info {
-  h1 {
+  h2 {
     margin-top: 71px;
     color: #171100;
     font-family: Sen;
