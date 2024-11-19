@@ -24,6 +24,12 @@ button {
   background: #171100;
   cursor: pointer;
 }
+.btn-medium {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 12px 24px;
+  border: none;
+}
 
 /* margin top 200 */
 .margin-top-200 {
@@ -54,18 +60,15 @@ header {
   background-color: #fffcf4;
   position: sticky;
   top: 0;
-
-  .logo {
-    width: 30%;
-    color: #171100;
-    font-family: Sen;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px; /* 141.667% */
-  }
 }
-
-.logo span {
+.logo {
+  color: #171100;
+  font-family: Sen;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px; /* 141.667% */
+}
+.logo-span {
   color: #ffb900;
   font-family: Sen;
   font-size: 24px;
@@ -351,12 +354,6 @@ ul {
     font-weight: 600;
     line-height: 30px;
   }
-  button {
-    font-size: 14px;
-    line-height: 26px;
-    padding: 12px 24px;
-    border: none;
-  }
 }
 button:hover {
   background: #ffb900;
@@ -510,8 +507,7 @@ i {
 
 /* ----------cta------------ */
 .cta-group {
-  padding: 0 135px 200px 135px;
-
+  padding: 0 135px;
   display: flex;
 }
 .cta-info {
@@ -539,4 +535,185 @@ i {
 }
 .btn:hover {
   background: #171100;
+}
+
+/* ------------our blog---------- */
+.our-blog {
+  background: #fffcf4;
+
+  padding: 96px 135px;
+}
+
+.title-blog {
+  h2 {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+  }
+  p {
+    margin-top: 16px;
+    color: #696262;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+.content-blog {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+.blog-pad {
+  padding: 20px 20px 28px 20px;
+  button {
+    margin-top: 12px;
+  }
+}
+.blog-list {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.status-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  span {
+    color: #5f5b53;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+.underline {
+  margin-top: 12px;
+  width: 160px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+.blog-pad h3 {
+  margin-top: 12px;
+  color: #171100;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.dots-blog {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------Footer-------- */
+.footer-contact {
+  padding: 96px 135px 28px 135px;
+  background-color: #2e2100;
+}
+.info-contact {
+  display: flex;
+}
+
+.lesson-contact {
+  flex-grow: 1;
+
+  .logo {
+    color: #fff;
+  }
+  span {
+    margin-left: -6px;
+  }
+  p {
+    margin-top: 18px;
+    color: #bfbcb2;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+.lesson-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.form-contact {
+  h4 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .underline-contact {
+    margin-top: 14px;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    gap: 12px;
+  }
+  ul li {
+    color: #bfbcb2;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  span {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
+.company-contact {
+  flex-grow: 1;
+  margin-left: 30px;
+}
+.support-contact {
+  margin-left: 35px;
+  flex-grow: 1;
+}
+.address-contact {
+  margin-left: 30px;
+  flex-grow: 2;
+}
+
+.under-copy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+  gap: 28px;
+  .copy-right {
+    text-align: center;
+    color: #807d74;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+.underline-footer {
+  content: "";
+  width: 1170px;
+  height: 1px;
+  background: #59554b;
 }

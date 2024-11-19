@@ -93,7 +93,6 @@ header li {
     margin-top: 61px;
     line-height: normal;
     white-space: wrap;
-
   }
   p {
     width: 60%;
@@ -204,6 +203,27 @@ header li {
 button:hover {
   background-color: #907171;
 }
-.fw-500{
+
+.hover-after li {
+  position: relative;
+}
+.hover-after a:hover {
   font-weight: 500;
 }
+.hover-after a::after {
+  content: "";
+  background-color: #1f1d2a;
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  border-radius: 99px;
+  transition: all ease-in-out 0.3s;
+}
+.hover-after a:hover::after {
+  width: 100%;
+}
+
+
+/* --------- */
