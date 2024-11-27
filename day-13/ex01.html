@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bài 1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: antiquewhite;
+        margin: 50px;
+        border: 2px solid rgb(100, 105, 199);
+      }
+      .item {
+        position: absolute;
+        /* transform: translate(-50%, -50%); */
+
+        animation: slideIn 5s linear infinite, rotate 5s steps(1) infinite;
+      }
+      /*  */
+      /*  */
+
+      @keyframes slideIn {
+        0% {
+          top: 0;
+          left: 0;
+        }
+
+        25% {
+          top: 0;
+          left: 100%;
+        }
+        50% {
+          top: 100%;
+          left: 100%;
+        }
+
+        75% {
+          left: 0;
+          top: 100%;
+        }
+        100% {
+          left: 0;
+          top: 0;
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: translate(0, -50%) rotate(0deg);
+        }
+        25% {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+        50% {
+          transform: translate(0, -50%) rotate(180deg);
+        }
+        75% {
+          transform: translate(-50%, -50%) rotate(270deg);
+        }
+        100% {
+          transform: translate(0, -50%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <i class="item fa-solid fa-arrow-right"></i>
+    </div>
+  </body>
+</html>

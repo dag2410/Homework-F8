@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .heart {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50% auto;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: rotate(45deg);
+        animation: heartZoom 1s infinite alternate;
+        div {
+          font-size: 40px;
+          margin-right: 40px;
+          margin-bottom: 50px;
+          z-index: 999;
+          transform: rotate(-45deg);
+        }
+      }
+      .heart::before,
+      .heart::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      .heart::before {
+        left: -50%;
+      }
+      .heart::after {
+        top: -50%;
+      }
+      @keyframes heartZoom {
+        0% {
+          transform: scale(1) rotate(45deg);
+        }
+        100% {
+          transform: scale(1.2) rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart">
+      <div>Hải Đăng</div>
+    </div>
+  </body>
+</html>
