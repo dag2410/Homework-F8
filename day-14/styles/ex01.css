@@ -22,7 +22,11 @@ button {
 .d-flex {
   display: flex;
 }
-
+.header__nav {
+  padding: 30px 97px;
+  justify-content: space-between;
+  align-items: center;
+}
 .header__banner {
   img {
     position: fixed;
@@ -46,19 +50,17 @@ button {
 nav {
   position: relative;
   position: sticky;
-  width: 100%;
-  padding: 30px 97px;
+  width: 50%;
   height: 80px;
   background-color: #fff;
   top: 44px;
   align-items: center;
-  .nav__logo {
-    cursor: pointer;
-  }
 }
-.nav__logo {
+.logo {
+  cursor: pointer;
   position: relative;
 }
+
 .nav__list {
   margin-left: 60px;
   ul {
@@ -77,8 +79,10 @@ nav {
     padding: 10px;
   }
 }
-
-.nav__input {
+.header__search {
+  justify-content: space-between;
+}
+.header__input {
   justify-content: center;
   align-items: center;
   position: relative;
@@ -98,7 +102,7 @@ input {
   outline: none;
 }
 
-.btn__seach {
+.btn__search {
   border: none;
   background-color: #fff;
 
@@ -111,7 +115,7 @@ input {
   }
 }
 
-.nav__info-list {
+.header__info-list {
   margin-left: 10px;
   li {
     flex-direction: column;
