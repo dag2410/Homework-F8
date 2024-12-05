@@ -22,10 +22,14 @@ button {
 .d-flex {
   display: flex;
 }
+
 .header__nav {
-  padding: 30px 97px;
+  width: 100%;
+  position: relative;
+
   justify-content: space-between;
   align-items: center;
+  /* background-color: green; */
 }
 .header__banner {
   img {
@@ -48,21 +52,20 @@ button {
 }
 
 nav {
-  position: relative;
+  padding: 20px 97px;
+
+  width: 100%;
   position: sticky;
-  width: 50%;
-  height: 80px;
   background-color: #fff;
   top: 44px;
   align-items: center;
 }
 .logo {
   cursor: pointer;
-  position: relative;
 }
 
 .nav__list {
-  margin-left: 60px;
+  padding-left: 40px;
   ul {
     gap: 10px;
   }
@@ -71,7 +74,7 @@ nav {
     color: #333f48;
     font-weight: 700;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 20px;
     white-space: nowrap;
     font-family: Montserrat;
   }
@@ -139,14 +142,18 @@ input {
 }
 
 .sub-menu {
-  top: 100%;
+  top: 80px;
   display: none;
   position: absolute;
   width: 100%;
   left: 0;
-  padding: 0 97px 0 130px;
+  right: 0;
+  padding: 0 200px;
   justify-content: space-between;
   border-top: 1px solid #e6e7e8;
+  a {
+    padding: 0;
+  }
 }
 
 .menu__model {
@@ -200,6 +207,7 @@ input {
 
 .nav__list li:hover .sub-menu {
   display: block;
+  width: 100%;
 }
 
 .nav__list .female:hover::after {
@@ -208,5 +216,24 @@ input {
   height: 50px;
   position: absolute;
   top: 36px;
-  left: 400px;
+  left: -10px;
+}
+.nav__list a {
+  position: relative;
+}
+.nav__list .nav-before::before {
+  content: "";
+  background: #da291c;
+  border-radius: 4px 4px 0 0;
+  height: 4px;
+  width: 0;
+  transform: translate(-50%, -50%);
+
+  top: 150%;
+  left: 50%;
+  position: absolute;
+  transition: all 0.1s ease-in;
+}
+.nav__list .nav-before:hover::before {
+  width: 32px;
 }
