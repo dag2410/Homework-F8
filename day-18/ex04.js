@@ -2,12 +2,8 @@ let weight = parseFloat(prompt("Nhập cân nặng"));
 let height = parseFloat(prompt("Nhập chiều cao"));
 let BMI_cal = weight / (height * height);
 if (
-  weight < 0 ||
-  isNaN(weight) ||
-  typeof weight === "string" ||
-  height < 0 ||
-  isNaN(height) ||
-  typeof height === "string"
+  weight < 0 || isNaN(weight) || typeof weight === "string" ||
+  height < 0 || isNaN(height) || typeof height === "string"
 ) {
   alert("Dữ liệu không hợp lệ");
 } else {

@@ -2,15 +2,9 @@ let a = parseFloat(prompt("nhập cạnh a: "));
 let b = parseFloat(prompt("nhập cạnh b: "));
 let c = parseFloat(prompt("nhập cạnh c: "));
 if (
-  a < 0 ||
-  isNaN(a) ||
-  typeof a === "string" ||
-  b < 0 ||
-  isNaN(b) ||
-  typeof b === "string" ||
-  c < 0 ||
-  isNaN(c) ||
-  typeof c === "string"
+  a < 0 || isNaN(a) || typeof a === "string" ||
+  b < 0 || isNaN(b) || typeof b === "string" ||
+  c < 0 || isNaN(c) || typeof c === "string"
 ) {
   alert("Vui lòng nhập lại số đo cạnh");
 } else {
