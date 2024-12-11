@@ -13,7 +13,7 @@ if (
 ) {
   alert("Dữ liệu không hợp lệ");
 } else {
-  function calc_BMI(weight, height) {
+  function calcBMI(weight, height) {
     if (BMI < 18.5) {
       alert("Thiếu cân");
     } else if (BMI < 23) {
@@ -26,5 +26,5 @@ if (
     return;
   }
   alert(`Chỉ số BMI của bạn là:, ${BMI}`);
-  calc_BMI(weight, height);
+  calcBMI(weight, height);
 }
