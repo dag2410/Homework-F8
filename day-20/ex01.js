@@ -35,5 +35,4 @@ function classificationStudent(students) {
 
   return { highest, lowest, group };
 }
-const result = classificationStudent(students);
-console.log(result);
+console.log(classificationStudent(students));
