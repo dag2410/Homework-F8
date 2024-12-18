@@ -37,7 +37,5 @@ function handleLogin(email, password) {
   }
   console.log("Thông tin không hợp lệ");
 }
-
 const dataLogin = handleLogin("nguyenvanb@email.com", "1234567");
-
 console.log("dataLogin =", dataLogin);
