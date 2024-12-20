@@ -30,22 +30,31 @@ const products = [
     price: 500,
   },
 ];
+let test = true;
 function getTopProducts(products, top) {
-  let arrTop = [];
-  let productsTop = [...products];
-  for (let i = 0; i < top; i++) {
-    let priceTop = productsTop[0].price;
-    for (let j = 1; j < productsTop.length; j++) {
-      if (productsTop[j].price > priceTop) {
-        priceTop = j;
-      }
-    }
-    arrTop.push(productsTop[0]);
-    productsTop.splice(0, 1);
-  }
+  if (top > products.length) {
+    console.log("null");
+    test = false;
+  } else {
+    let arrTop = [];
+    let productsTop = [...products];
 
-  return arrTop;
+    for (let i = 0; i < top; i++) {
+      let topPrice = 0;
+      for (let j = 1; j < productsTop.length; j++) {
+        if (productsTop[j].price > productsTop[topPrice].price) {
+          topPrice = j;
+        }
+      }
+      arrTop.push(productsTop[topPrice]);
+      productsTop.splice(topPrice, 1);
+    }
+
+    return arrTop;
+  }
 }
 
 const result = getTopProducts(products, 3);
-console.log(result);
+test == true
+  ? console.log(result)
+  : console.log("số lượng muốn sắp xếp quá mức mảng");

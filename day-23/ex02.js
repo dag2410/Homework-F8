@@ -2,7 +2,8 @@ function flattenCategories(categories, level = 0) {
   let result = [];
 
   categories.forEach((category) => {
-    result.push({ ...category, level });
+    const { children, ...rest } = category;
+    result.push({ ...rest, level });
 
     if (category.children && category.children.length > 0) {
       result = result.concat(flattenCategories(category.children, level + 1));
