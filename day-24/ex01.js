@@ -17,5 +17,5 @@ let result = fruits.reduce((acc, cur) => {
   return acc;
 }, []);
 
-// Output:
+
 console.log(result); // ["apple", "banana", "kiwi", "orange"]

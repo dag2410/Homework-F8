@@ -15,7 +15,6 @@ function fibonacci(n) {
   console.log(result);
 }
 
-// Output:
 
 fibonacci(5); // 0 1 1 2 3
 
