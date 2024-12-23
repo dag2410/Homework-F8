@@ -1,4 +1,5 @@
-function fibonacci(n) {
+let n = parseInt(prompt("Nhập số lượng cho dãy Fibonacci: "));
+function printFibonacci(n) {
   if (n <= 0 || typeof n == "string") {
     console.log("Số phần tử không hợp lệ");
     return;
@@ -14,16 +15,4 @@ function fibonacci(n) {
   }
   console.log(result);
 }
-
-
-fibonacci(5); // 0 1 1 2 3
-
-fibonacci(10); // 0 1 1 2 3 5 8 13 21 34
-
-fibonacci(0); // Số phần tử không hợp lệ
-
-fibonacci(-5); // Số phần tử không hợp lệ
-
-fibonacci("abc"); // Số phần tử không hợp lệ
-
-fibonacci(1); // 0
+printFibonacci(n);
