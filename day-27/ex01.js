@@ -1,20 +1,25 @@
 function convertNested(arr) {
   const nested = [];
   const itemById = {};
-  for (const item of arr) {
-    itemById[item.id] = { ...item, children: [] };
-  }
+  let newCategories = [...categories];
+  if (Array.isArray(newCategories)) {
+    for (const item of arr) {
+      itemById[item.id] = { ...item, children: [] };
+    }
 
-  for (const item of arr) {
-    const currentItem = itemById[item.id];
-    if (item.parent === 0) {
-      nested.push(currentItem);
-    } else {
-      const parentItem = itemById[item.parent];
-      if (parentItem) {
-        parentItem.children.push(currentItem);
+    for (const item of arr) {
+      const currentItem = itemById[item.id];
+      if (item.parent === 0) {
+        nested.push(currentItem);
+      } else {
+        const parentItem = itemById[item.parent];
+        if (parentItem) {
+          parentItem.children.push(currentItem);
+        }
       }
     }
+  } else {
+    return "Khong phai la mang";
   }
 
   return nested;

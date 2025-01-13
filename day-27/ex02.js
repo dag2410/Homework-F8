@@ -1,20 +1,24 @@
 function flattenCategories(categories) {
   const flattened = [];
 
-  while (categories.length > 0) {
-    const current = categories.shift();
-    const { children, ...categoryInfo } = current;
-    flattened.push({ ...categoryInfo, parentId: categoryInfo.parentId || 0 });
+  if (Array.isArray(categories)) {
+    while (categories.length > 0) {
+      const current = categories.shift();
+      const { children, ...categoryInfo } = current;
+      flattened.push({ ...categoryInfo, parentId: categoryInfo.parentId || 0 });
 
-    if (children && children.length > 0) {
-      for (let i = 0; i < children.length; i++) {
-        const child = children[i];
-        categories.push({ ...child, parentId: categoryInfo.id });
+      if (children && children.length > 0) {
+        for (let i = 0; i < children.length; i++) {
+          const child = children[i];
+          categories.push({ ...child, parentId: categoryInfo.id });
+        }
       }
     }
+  } else {
+    return "khong phai la mang";
   }
 
-  return flattened;
+  return flattened.sort((a, b) => a.id - b.id);
 }
 
 const categories = [
