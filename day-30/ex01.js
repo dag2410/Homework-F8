@@ -42,6 +42,9 @@ const menu = [
 ];
 
 const restMenu = (menu) => {
+  if (!Array.isArray(menu)) {
+    return "Invalid";
+  }
   const outputMenu = document.createElement("ul");
   outputMenu.setAttribute("id", "main-menu");
   document.body.appendChild(outputMenu);

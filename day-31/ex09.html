@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+      .cart-container {
+        margin-top: 20px;
+      }
+      .delete-btn {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+      .total-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>DANH SÁCH SẢN PHẨM</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+          <th>Thêm vào giỏ</th>
+        </tr>
+      </thead>
+      <tbody id="product-list">
+        <tr>
+          <td>1</td>
+          <td>Sản phẩm 1</td>
+          <td>1000</td>
+          <td>
+            <input type="number" value="1" min="1" class="quantity" />
+            <button class="add-to-cart">Thêm vào giỏ</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sản phẩm 2</td>
+          <td>2000</td>
+          <td>
+            <input type="number" value="1" min="1" class="quantity" />
+            <button class="add-to-cart">Thêm vào giỏ</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sản phẩm 3</td>
+          <td>3000</td>
+          <td>
+            <input type="number" value="1" min="1" class="quantity" />
+            <button class="add-to-cart">Thêm vào giỏ</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>GIỎ HÀNG</h2>
+    <div class="cart-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <tr>
+            <td colspan="5">Giỏ hàng không có sản phẩm</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="total-price">Tổng tiền: <span id="total-price">0</span> VND</p>
+    </div>
+
+    <script src="./ex09.js"></script>
+  </body>
+</html>
