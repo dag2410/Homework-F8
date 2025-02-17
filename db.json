@@ -4,7 +4,25 @@
       "email": "dagger241004abc@gmail.com",
       "password": "$2a$10$ywWF4dJUvXHuWpLUh3mCzu6Z1j3Y.zPWV7zmGVat0h/Emp3D6xxC6",
       "id": 1
+    },
+    {
+      "email": "dagger1241004abc@gmail.com",
+      "password": "$2a$10$jI.7Qi1mJRGRcNTKI.9hBuTxmb8G/sz66p7hP.joBEsWpMJqfhkr2",
+      "id": 2
     }
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "id": "6",
+      "title": "bóng chuyền",
+      "status": "done",
+      "priority": 3
+    },
+    {
+      "id": "2",
+      "title": "rổ",
+      "status": "done",
+      "priority": 1
+    }
+  ]
 }

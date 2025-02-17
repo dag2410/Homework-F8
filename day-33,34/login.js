@@ -9,13 +9,13 @@ loginForm.addEventListener("submit", function (e) {
   const password = document.getElementById("password").value;
 
   if (password.length < 6) {
-    alert("mat khau qua ngan");
+    alert("Mật khẩu quá ngắn");
     return;
   }
   //b3:Gửi dữ liệu lên server
 
   if (!userInfo.email || !userInfo.password) {
-    alert("dang nhap khong thanh cong");
+    alert("Đăng nhập không thành công");
   } else {
     fetch("http://localhost:3000/login", {
       headers: {
@@ -28,14 +28,14 @@ loginForm.addEventListener("submit", function (e) {
       .then((data) => {
         // password...
         if (data.accessToken) {
-          if (confirm("dang nhap thanh cong")) {
+          if (confirm("Đăng nhập thành công")) {
             location.href = "./task.html";
             window.localStorage.setItem("accessToken", data.accessToken);
             window.localStorage.setItem("email", userInfo.email);
             window.localStorage.setItem("password", userInfo.password);
           }
         } else {
-          alert("dang nhap khong thanh cong");  
+          alert("Đăng nhập không thành công");
           return;
         }
       })

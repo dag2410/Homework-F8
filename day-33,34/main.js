@@ -30,7 +30,7 @@ registerForm.addEventListener("submit", function (e) {
       .then((res) => res.json())
       .then((data) => {
         if (data.accessToken) {
-          if (confirm("dang ki thanh cong,dang nhap ngay")) {
+          if (confirm("Đăng kí thành công, bạn có muốn đặng nhập ngay")) {
             location.href = "./login.html";
           }
         } else {
