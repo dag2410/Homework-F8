@@ -1,0 +1,25 @@
+{
+  "name": "homework-f8",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json --port 3000 -m ./node_modules/json-server-auth"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dag2410/Homework-F8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dag2410/Homework-F8/issues"
+  },
+  "homepage": "https://github.com/dag2410/Homework-F8#readme",
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  }
+}
